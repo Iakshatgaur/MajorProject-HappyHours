@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="loginPage.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="Capture-removebg.png" alt="" id="logo">
+    </div>
+    <div class="login">
+        <div class="heading">
+            <span><input type="button" value="Goback" id="goback"></span>
+            <span id="credentials">Enter your credentials</span>
+        </div>
+        <div class="loginsignup">
+
+            <form class="item-1" id="item1">
+                <input type="text" placeholder="Email ID" class="loginarea" id="email" autocomplete="name" >
+
+                <input type="password" placeholder="Password" class="loginarea" id="passwoord">
+                <input type="button" value="login" id="button" onclick="getCredentials()">
+            </form>
+            <div id="vline" ></div>
+            <div class="item-1" id="item2">
+                <span class="newhere">NEW HERE?</span>
+                <input type="button" placeholder="SignUp" value="SignUp" id="signupbut">
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="loginpage.js"></script>
+</html>

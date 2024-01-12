@@ -1,0 +1,184 @@
+body{
+        font-family: 'Quicksand', sans-serif;
+        background-image:linear-gradient(to right,rgb(255, 49, 49),rgb(255, 145, 77));
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+.container
+{
+    /* border : 2px solid black; */
+    display: grid;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav"
+    "filters body body body body body body body body "  ;
+    
+}
+.navi{
+    /* border: 2px solid blue; */
+}
+
+.item1
+{
+    /* border: 2px solid yellow; */
+    /* width:100px; */
+}
+#item1
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-area: nav;
+}
+#item2
+{
+    grid-area:filters;
+}
+#item3
+{
+    padding: 3px 3px;
+    grid-area:body;
+}
+
+.naviitems
+{
+    display:flex;   
+    list-style-type: none;
+    align-self: flex-start;
+
+}
+.naviitems li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
+.naviitems li a:hover
+{
+    color: yellow;
+}
+
+#logo
+{width:15rem}
+
+#searchInput
+{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 1.5rem;
+    height: 2rem;
+    width: 210px;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#search
+{
+    width: 15rem;
+    margin-left: 10rem;
+}
+.browsemenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(255, 145, 77)
+}
+.menuoptions
+{
+    margin: 2px 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+}
+.filtersection
+{
+    display: grid;
+    height: 50rem;
+    margin: 1rem 1rem;
+    background-color: white
+}
+#maindata
+{   display:grid;
+    grid-template-rows: 1fr 7fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    display: grid;
+    height: 50rem;
+}
+#chose
+{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    /* border: 2px sold black; */
+    margin: 0rem 1rem;
+}
+.databox
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 98%;
+    justify-content:space-evenly;
+    /* background-color: white; */
+   
+    
+    
+}
+.data
+{
+   
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    margin: 1rem 0rem;
+    height: 14rem;
+    width :25rem;
+}
+.atc{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.atc button{
+height: 3rem;
+    margin-bottom: 2rem;
+    justify-items: center; 
+    text-align: center;
+    border-radius: 20px;
+    background-color: yellow;
+    font-family: 'Quicksand';
+    font-size: 17px;
+    font-weight: bold;
+}
+.foodDiscription
+{
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px sold black;
+}
+.foodphoto{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px sold black;
+}
+#f1
+{
+    background-image: "MajorProject/Dal-Makhani-New-3.jpg";
+}
+div.databox img{
+    width: 10rem;
+    height: 14rem;
+}
+.addtocartbtn
+{
+    margin-top: 1rem;
+    display:flex;
+}
